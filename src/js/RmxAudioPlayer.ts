@@ -48,15 +48,15 @@ export class RmxAudioPlayer {
   handlers: AudioPlayerEventHandlers = {};
   options: AudioPlayerOptions = { verbose: false, resetStreamOnPause: true };
 
-  private _inititialized: boolean = false;
-  private _initPromise: Promise<boolean>;
-  private _readyResolve: any;;
-  private _readyReject: any;
+  protected _inititialized: boolean = false;
+  protected _initPromise: Promise<boolean>;
+  protected _readyResolve: any;;
+  protected _readyReject: any;
 
-  private _currentState: 'unknown' | 'ready' | 'error' | 'playing' | 'loading' | 'paused' | 'stopped' = 'unknown';
-  private _hasError: boolean = false;
-  private _hasLoaded: boolean = false;
-  private _currentItem: AudioTrack | null = null;
+  protected _currentState: 'unknown' | 'ready' | 'error' | 'playing' | 'loading' | 'paused' | 'stopped' = 'unknown';
+  protected _hasError: boolean = false;
+  protected _hasLoaded: boolean = false;
+  protected _currentItem: AudioTrack | null = null;
 
   /**
    * The current summarized state of the player, as a string. It is preferred that you use the 'isX' accessors,
