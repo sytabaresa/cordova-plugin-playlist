@@ -120,6 +120,6 @@
     <js-module src="www/browser/Media.js" name="RmxAudioPlayer">
       <clobbers target="RmxAudioPlayer" />
     </js-module>
-    <dependency id="cordova-plugin-media" version="~2.1"/>
+    <dependency id="cordova-plugin-media" version="~5.0.2"/>
   </platform>
 </plugin>
