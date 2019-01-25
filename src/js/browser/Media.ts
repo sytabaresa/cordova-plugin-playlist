@@ -2,10 +2,6 @@
 /* globals window */
 
 import {
-    RmxAudioStatusMessage,
-} from '../Constants';
-
-import {
     AudioPlayerOptions,
     AudioTrack,
     AudioTrackRemoval,
